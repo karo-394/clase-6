@@ -49,12 +49,12 @@
                 .then((datos) => {
                     var trabajo = datos.data;
                     console.log("Datos recibidos:", trabajo);
-					trabajo.forEach( (x) => }
+					trabajo.forEach((x) => {
 						if(x.ok == 1){
-							t.innerHTML += `<tr><td>${x.name}</td><td>
-								$
+							t.innerHTML += `<tr><td>${x.name}</td><td>${x.group}</td><td>${focus}</td><tr>`;
+						}
+					});
                 })
-
                 .catch((error) => {
                     console.error("Algo salió mal:", error);
                 });
