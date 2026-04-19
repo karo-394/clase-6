@@ -12,6 +12,7 @@
 			
 			table{
 				border-collapse: collapse;
+				text-align:left
 			}
 			
 			td, th{
